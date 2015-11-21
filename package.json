@@ -1,0 +1,41 @@
+{
+	"name": "vscode-haml",
+	"description": "Language and Snippets for HAML",
+	"version": "0.0.1",
+	"publisher": "Borke",
+	"icon": "images/haml.png",
+	"displayName": "HAML Extension for Visual Studio Code",
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/blindly/vscode-haml.git"
+	},
+	"bugs": {
+		"url": "https://github.com/blindly/vscode-haml/issues"
+	},
+	"engines": {
+		"vscode": "^0.10.1"
+	},
+	"categories": [
+		"Languages",
+    "Snippets"
+	],
+	"contributes": {
+		"languages": [{
+			"id": "haml",
+			"aliases": ["Ruby Haml", "haml"],
+			"extensions": [".haml",".sass"],
+			"configuration": "./haml.configuration.json"
+		}],
+		"grammars": [{
+			"language": "haml",
+			"scopeName": "text.haml",
+			"path": "./syntaxes/haml.tmLanguage"
+		}],
+		"snippets": [
+			{
+				"language": "haml",
+				"path": "./snippets/snippets.json"
+			}]
+	}
+}

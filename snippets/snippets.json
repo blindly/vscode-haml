@@ -1,0 +1,290 @@
+{
+	"=": {
+		"prefix": "=",
+		"body": "= \"${1:Lorem ipsum...}\"",
+		"description": "\" ... \"",
+		"scope": "text.haml"
+	},
+	"#": {
+		"prefix": "#",
+		"body": "#${1:id_selector}\n\t$0",
+		"description": "div (id)",
+		"scope": "text.haml"
+	},
+	"=1": {
+		"prefix": "=",
+		"body": "= render :partial => \"${1:partial_name}\"",
+		"description": "render_partial",
+		"scope": "text.haml"
+	},
+	"doctype": {
+		"prefix": "doctype",
+		"body": "!!! Strict",
+		"description": "XHTML 1.0 Strict",
+		"scope": "text.haml"
+	},
+	"doctype1": {
+		"prefix": "doctype",
+		"body": "!!!",
+		"description": "XHTML 1.0 Transitional",
+		"scope": "text.haml"
+	},
+	"doctype2": {
+		"prefix": "doctype",
+		"body": "!!! 1.1",
+		"description": "XHTML 1.1",
+		"scope": "text.haml"
+	},
+	".c": {
+		"prefix": ".c",
+		"body": ".columns.clearfix\n  .column.one\n  .column.two\n  .column.three",
+		"description": ".columns",
+		"scope": "text.haml"
+	},
+	"a": {
+		"prefix": "a",
+		"body": "%a{:href => \"${1:/}\"}$0",
+		"description": "a",
+		"scope": "text.haml"
+	},
+	"b": {
+		"prefix": "b",
+		"body": "%blockquote",
+		"description": "blockquote",
+		"scope": "text.haml"
+	},
+	"br": {
+		"prefix": "br",
+		"body": "%br\n\t",
+		"description": "br",
+		"scope": "text.haml"
+	},
+	".": {
+		"prefix": ".",
+		"body": ".${1:class_selector}\n\t$0",
+		"description": "div (class)",
+		"scope": "text.haml"
+	},
+	"e": {
+		"prefix": "e",
+		"body": "%em $0",
+		"description": "emphasized",
+		"scope": "text.haml"
+	},
+	":f": {
+		"prefix": ":f",
+		"body": ":erb\n\t$0",
+		"description": "filter (erb)",
+		"scope": "text.haml"
+	},
+	":f1": {
+		"prefix": ":f",
+		"body": ":escaped\n\t$0",
+		"description": "filter (escaped)",
+		"scope": "text.haml"
+	},
+	":f2": {
+		"prefix": ":f",
+		"body": ":javascript\n\t$0",
+		"description": "filter (javascript)",
+		"scope": "text.haml"
+	},
+	":f3": {
+		"prefix": ":f",
+		"body": ":markdown\n\t$0",
+		"description": "filter (markdown)",
+		"scope": "text.haml"
+	},
+	":f4": {
+		"prefix": ":f",
+		"body": ":plain\n\t$0",
+		"description": "filter (plain)",
+		"scope": "text.haml"
+	},
+	":f5": {
+		"prefix": ":f",
+		"body": ":preserve\n\t$0",
+		"description": "filter (preserve)",
+		"scope": "text.haml"
+	},
+	":f6": {
+		"prefix": ":f",
+		"body": ":ruby\n\t$0",
+		"description": "filter (ruby)",
+		"scope": "text.haml"
+	},
+	":f7": {
+		"prefix": ":f",
+		"body": ":sass\n\t$0",
+		"description": "filter (sass)",
+		"scope": "text.haml"
+	},
+	":f8": {
+		"prefix": ":f",
+		"body": ":textile\n\t$0",
+		"description": "filter (textile)",
+		"scope": "text.haml"
+	},
+	"h": {
+		"prefix": "h",
+		"body": "%h1 ${1:Heading Level 1}\n$0",
+		"description": "h1",
+		"scope": "text.haml"
+	},
+	"h1": {
+		"prefix": "h",
+		"body": "%h2 ${1:Heading Level 2}\n$0",
+		"description": "h2",
+		"scope": "text.haml"
+	},
+	"h2": {
+		"prefix": "h",
+		"body": "%h3 ${1:Heading Level 3}\n$0",
+		"description": "h3",
+		"scope": "text.haml"
+	},
+	"h3": {
+		"prefix": "h",
+		"body": "%h4 ${1:Heading Level 4}\n$0",
+		"description": "h4",
+		"scope": "text.haml"
+	},
+	"h4": {
+		"prefix": "h",
+		"body": "%h5 ${1:Heading Level 5}\n$0",
+		"description": "h5",
+		"scope": "text.haml"
+	},
+	"h5": {
+		"prefix": "h",
+		"body": "%h6 ${1:Heading Level 6}\n$0",
+		"description": "h6",
+		"scope": "text.haml"
+	},
+	"}": {
+		"prefix": "}",
+		"body": "}\n",
+		"description": "newline",
+		"scope": "text.haml, meta.section.attributes.haml"
+	},
+	"img": {
+		"prefix": "img",
+		"body": "image_tag(\"/images/$1\"$2)$0",
+		"description": "img",
+		"scope": "text.haml"
+	},
+	"li": {
+		"prefix": "li",
+		"body": "%li ${5:Lorem ipsum...}$0",
+		"description": "li",
+		"scope": "text.haml"
+	},
+	"=2": {
+		"prefix": "=",
+		"body": "= link_to \"${1:Anchor Text}\", ${2:route}_url",
+		"description": "link_to (route)",
+		"scope": "text.haml"
+	},
+	"=3": {
+		"prefix": "=",
+		"body": "= link_to \"${1:Anchor Text}\", \"${2:#}\"",
+		"description": "link_to (url)",
+		"scope": "text.haml"
+	},
+	"=4": {
+		"prefix": "=",
+		"body": "= link_to \"${TM_SELECTED_TEXT:Anchor text...}\", ${1:\"${2:$0}\"}",
+		"description": "link_to (wrap selected text)",
+		"scope": "text.haml"
+	},
+	"ol": {
+		"prefix": "ol",
+		"body": "%ol${2:{:${3:id} => \"${4:selector}\"$5\\}}\n\t%li ${6:Lorem ipsum dolor sit amet, consectetur adipisicing elit.}$0",
+		"description": "ol",
+		"scope": "text.haml"
+	},
+	"p": {
+		"prefix": "p",
+		"body": "%p ${1:Lorem ipsum...}",
+		"description": "p",
+		"scope": "text.haml"
+	},
+	"s": {
+		"prefix": "s",
+		"body": "%span ",
+		"description": "span",
+		"scope": "text.haml"
+	},
+	"s1": {
+		"prefix": "s",
+		"body": "%strong $0",
+		"description": "strong",
+		"scope": "text.haml"
+	},
+	"t": {
+		"prefix": "t",
+		"body": "%table\n  %tr\n    %td\n      ${1:Table Data}",
+		"description": "table (basic)",
+		"scope": "text.haml"
+	},
+	"t1": {
+		"prefix": "t",
+		"body": "%table\n  %thead\n    %tr\n      %th\n        ${1:Table Heading}\n  %tbody\n    %tr\n      %td\n        ${2:Table Data}",
+		"description": "table (templated)",
+		"scope": "text.haml"
+	},
+	"t2": {
+		"prefix": "t",
+		"body": "%tbody\n  %tr\n    %td\n      ${1:Table Data} $0",
+		"description": "tbody",
+		"scope": "text.haml"
+	},
+	"td": {
+		"prefix": "td",
+		"body": "%td $0",
+		"description": "td",
+		"scope": "text.haml"
+	},
+	"t3": {
+		"prefix": "t",
+		"body": "%tfoot\n  %tr\n    %td\n      ${1:Table Data} $0",
+		"description": "tfooter",
+		"scope": "text.haml"
+	},
+	"th": {
+		"prefix": "th",
+		"body": "%th $0",
+		"description": "th",
+		"scope": "text.haml"
+	},
+	"t4": {
+		"prefix": "t",
+		"body": "%thead\n  %tr\n    %th\n      ${1:Table Heading} $0",
+		"description": "thead",
+		"scope": "text.haml"
+	},
+	"tr": {
+		"prefix": "tr",
+		"body": "%tr\n  %${1:td}\n    ${2:Table Data} $0",
+		"description": "tr",
+		"scope": "text.haml"
+	},
+	"ul": {
+		"prefix": "ul",
+		"body": "%ul${1:#${2:selector}}\n\t%li ${3:Lorem ipsum dolor sit amet, consectetur adipisicing elit.}$0",
+		"description": "ul",
+		"scope": "text.haml"
+	},
+	"{": {
+		"prefix": "{",
+		"body": "{:${3:id} => \"${4:selector}\"",
+		"description": "{ ... }",
+		"scope": "text.haml, meta.section.attributes.haml"
+	},
+	",": {
+		"prefix": ",",
+		"body": ", :${1:id} => \"${2:selector}\"$0",
+		"description": "}, :id => \"selector\"",
+		"scope": "text.haml, meta.section.attributes.haml"
+	}
+}
